@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Library</title>
+  </head>
+  <body>
+    <h1>Create a Library</h1>
+
+
+    <form action="{% url 'libraryapp:locations' %}" method="post">
+      {% csrf_token %}
+      <fieldset>
+          <label for="title">Name of Library: </label>
+          <input id="title" type="text" name="title">
+      </fieldset>
+      <fieldset>
+          <label for="address">Address: </label>
+          <input id="address" type="text" name="address">
+
+      <input type="submit" value="Create New Library" />
+    </form>
+  </body>
+</html>
