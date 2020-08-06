@@ -108,6 +108,7 @@ media/
 *.pid
 libraryenv/
 connection.py
+local_settings.py
 # django migrations 
 **/migrations/**
 !**/migrations
